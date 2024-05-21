@@ -4,9 +4,8 @@
 // Overrides just need placed prior to the theme import
 // For example:
 // $color-primary: #3a0;
-@import "global/theme";
+@import "global/colors";
 @import "util/reset";
-@import "util/logomark";
 @import "global/typography";
 @import "composition/layout";
 @import "block/header";
@@ -15,7 +14,7 @@
 @import "block/guidelines";
 @import "block/contribute";
 @import "block/files";
-@import "global/styles";
+@import "block/styles";
 @import "block/profile";
 @import "block/footer";
 @import "global/links";
