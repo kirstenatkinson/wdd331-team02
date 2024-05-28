@@ -61,3 +61,83 @@ body {
   background-color: #00114B;
   color: #f6f6f6;
 }
+
+
+
+/* Michael tried to do mobile layout here
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile-first styles */
+body {
+  
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+nav {
+
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style-type:none;
+  display: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 0.5rem;
+  
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+}
