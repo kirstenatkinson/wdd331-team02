@@ -5,7 +5,11 @@
 
 h1,
 h2 {
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--main-font);
     font-weight: bold;
     text-transform: uppercase;
+}
+
+header div h2 {
+    font-family: var(--accent-font);
 }
