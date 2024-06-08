@@ -3,6 +3,10 @@
     --accent-font: "Wire One", sans-serif;
 }
 
+a:nth-of-type(1) {
+    font-family: var(--accent-font);
+}
+
 h1,
 h2,
 h4 {
