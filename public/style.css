@@ -318,7 +318,7 @@ header .link-github svg {
 }
 @keyframes slideInStyle {
   0% {
-    transform: translateX(-200%);
+    transform: translateX(-500%);
   }
   100% {
     transform: translateX(0%);
