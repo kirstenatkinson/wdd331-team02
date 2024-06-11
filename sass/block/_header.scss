@@ -1,0 +1,97 @@
+$container-padding: 20px;
+header {
+  z-index: 0;
+    padding: $container-padding;
+    text-align: center;
+    background-color: $color-background;
+    position: relative; // Make the header relative for absolute positioning within it
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    
+    // Purple triangle background
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 180px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 280px solid $color-purple;
+        top: -60px;
+        left: 45%;
+        transform: translateX(-50%) rotate(-25deg) ;
+        z-index: -1; // Place behind the text
+    }
+  
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      color: transparent; // Hide the original text
+  
+      // Style for "STYLE"
+      &::after {
+        content: "STYLE";
+        color: $color-yellow;
+        text-shadow: 2px 2px 0 darken($color-yellow, 20%);
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        transform: rotate(10deg);
+        font-size: 4rem; // Adjust the font size
+      }
+
+      // Another pseudo-element for "STAGE"
+      &::before {
+        content: "STAGE";
+        color: $color-pink;
+        text-shadow: 2px 2px 0 darken($color-pink, 20%);
+        position: absolute;
+        top: 80px;
+        left: 30px;
+        transform: rotate(-10deg);
+        font-size: 4rem; // Adjust the font size
+      }
+    }
+  
+    h2 {
+      position: absolute;
+      margin-left: auto; // Move the h2 element to the right
+      display: inline-block; // Make the h2 element inline-block so it can span across lines
+      width: calc(100% - 900px); // Set the width to fill the remaining space
+      font-size: 1.5rem;
+      color: $color-blue-2;
+      text-shadow: 1px 1px 0 darken($color-blue-2, 30%);
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    .link-github {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: $color-yellow;
+      color: $color-background;
+      border-radius: 5px;
+      font-weight: bold;
+      text-transform: uppercase;
+  
+      svg {
+        margin-right: 10px;
+        fill: $color-background;
+      }
+    }
+  
+    .link-github:hover {
+      background-color: darken($color-yellow, 10%);
+    }
+  }

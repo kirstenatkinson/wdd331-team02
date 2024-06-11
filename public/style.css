@@ -61,3 +61,86 @@ body {
   background-color: #00114B;
   color: #f6f6f6;
 }
+
+header {
+  z-index: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #00114B;
+  position: relative;
+}
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+header::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 180px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 280px solid #512B8F;
+  top: -60px;
+  left: 45%;
+  transform: translateX(-50%) rotate(-25deg);
+  z-index: -1;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: transparent;
+}
+header h1::after {
+  content: "STYLE";
+  color: #FFDE59;
+  text-shadow: 2px 2px 0 #f2c200;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  transform: rotate(10deg);
+  font-size: 4rem;
+}
+header h1::before {
+  content: "STAGE";
+  color: #FF22AD;
+  text-shadow: 2px 2px 0 #bb0076;
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  transform: rotate(-10deg);
+  font-size: 4rem;
+}
+header h2 {
+  position: absolute;
+  margin-left: auto;
+  display: inline-block;
+  width: calc(100% - 900px);
+  font-size: 1.5rem;
+  color: #00cac8;
+  text-shadow: 1px 1px 0 #003131;
+  margin-bottom: 20px;
+}
+header p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+header .link-github {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFDE59;
+  color: #00114B;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .link-github svg {
+  margin-right: 10px;
+  fill: #00114B;
+}
+header .link-github:hover {
+  background-color: #ffd426;
+}
