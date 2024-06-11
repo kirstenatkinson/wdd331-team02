@@ -1,0 +1,80 @@
+:root {
+    --main-font: "Open Sans", sans-serif;
+    --accent-font: "Wire One", sans-serif;
+}
+
+a:nth-of-type(1) {
+    font-family: var(--accent-font);
+}
+
+h1,
+h2,
+h4 {
+    font-family: var(--main-font);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+h3 {
+    font-family: var(--accent-font);
+    text-transform: uppercase;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+}
+
+p {
+    font-family: var(--main-font);
+}
+
+li {
+    font-family: var(--accent-font);
+}
+
+header div h2,
+header div p,
+header div a {
+    font-family: var(--accent-font);
+    text-transform: none;
+    text-decoration: none;
+}
+
+.container:nth-of-type(2) p:nth-of-type(2) {
+    font-family: var(--accent-font);
+}
+
+.link-guidelines {
+    font-family: var(--accent-font);
+    text-decoration: none;
+}
+
+ol li {
+    font-family: var(--main-font);
+}
+
+#contribute #files div {
+    font-family: var(--accent-font);
+}
+
+.profile-author,
+.profile-twitter,
+.profile-website {
+    font-family: var(--main-font);
+}
+
+.profile div a:nth-last-of-type(1),
+.link-allstyles {
+    font-family: var(--accent-font);
+    text-decoration: none;
+}
+
+.page-footer div p:nth-oftype(1) {
+    text-transform: uppercase;
+}
