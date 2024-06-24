@@ -1,0 +1,51 @@
+nav ul {
+    background-color: $color-yellow;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    transform: rotate(-5deg);
+    padding: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 2em;
+}
+
+nav ul li a {
+    color: $color-background;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul:hover {
+    background-color: darken($color-yellow, 10%)
+}
+
+nav ul li a:hover {
+    color: $color-text;
+}
+
+@media only screen and (max-width: 900px) {
+    nav {
+        position: relative
+    }
+
+    nav ul {
+        position: -webkit-sticky;
+        top: 0;
+        width: 100%;
+        transform: none;
+        display: flex;
+        font-size: 1.75em;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+    nav ul {
+        padding: 20px;
+    }
+}
