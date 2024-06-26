@@ -553,3 +553,34 @@ nav ul li a:hover {
     padding: 20px;
   }
 }
+#about .container:nth-child(1),
+#about .container:nth-child(2) {
+  border: 0.25em solid #FF22AD;
+  border-radius: 1.5em;
+  padding: 1em;
+  margin: 1em;
+  margin-bottom: 5em;
+}
+
+#about .container:nth-child(1) h2 {
+  background: #FF22AD;
+  margin-top: -3em;
+  left: 42.5%;
+  position: absolute;
+  padding: 10px 20px;
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+#about .container:nth-child(2) {
+  border-color: #FFDE59;
+}
+
+#about .container:nth-child(2) h2 {
+  background: #FFDE59;
+  color: #00114B;
+  margin-top: -3em;
+  left: 30%;
+  position: absolute;
+  padding: 10px 30px;
+  clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+}

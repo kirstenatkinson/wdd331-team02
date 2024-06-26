@@ -1,0 +1,31 @@
+#about .container:nth-child(1),
+#about .container:nth-child(2) {
+    border: .25em solid $color-pink;
+    border-radius: 1.5em;
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 5em;
+}
+
+#about .container:nth-child(1) h2 {
+    background: $color-pink;
+    margin-top: -3em;
+    left: 42.5%;
+    position: absolute;
+    padding: 10px 20px;
+    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+#about .container:nth-child(2) {
+    border-color: $color-yellow;
+}
+
+#about .container:nth-child(2) h2 {
+    background: $color-yellow;
+    color: $color-background;
+    margin-top: -3em;
+    left: 30%;
+    position: absolute;
+    padding: 10px 30px;
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+}
