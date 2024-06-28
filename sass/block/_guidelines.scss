@@ -1,0 +1,107 @@
+#guidelines {
+    border: .25em solid $color-blue-1;
+    border-radius: 1.5em;
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 8em;
+    max-width: 1200px;
+
+    h2 {
+        background: $color-blue-1;
+        margin-top: -3em;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding: 10px 20px;
+        clip-path: polygon(30% 0, 70% 0, 75% 100%, 25% 100%);
+    }
+
+    .link-guidelines {
+        display: inline-block;
+        padding: 10px 20px;
+        /* Adjust padding as needed */
+        border: 2px solid $color-yellow;
+        /* Adjust border color as needed */
+        border-radius: 10px;
+        text-decoration: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        position: relative;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    h3::before,
+    h3::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 200px;
+        height: 10px;
+        background-color: $color-pink;
+    }
+
+    h3::before {
+        left: 100px;
+        /* Adjust to position the bar */
+        transform: translateY(-50%);
+    }
+
+    h3::after {
+        right: 100px;
+        /* Adjust to position the bar */
+        transform: translateY(-50%);
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    #guidelines h2 {
+        clip-path: polygon(25% 0, 75% 0, 80% 100%, 20% 100%);
+    }
+
+    #guidelines h3::before,
+    #guidelines h3::after {
+        width: 150px;
+    }
+
+    #guidelines h3::before {
+        left: 75px;
+        /* Adjust to position the bar */
+    }
+
+    #guidelines h3::after {
+        right: 75px;
+        /* Adjust to position the bar */
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #guidelines h3::before,
+    #guidelines h3::after {
+        width: 100px;
+    }
+
+    #guidelines h3::before {
+        left: 75px;
+        /* Adjust to position the bar */
+    }
+
+    #guidelines h3::after {
+        right: 75px;
+        /* Adjust to position the bar */
+    }
+}
