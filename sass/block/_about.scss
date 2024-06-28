@@ -15,7 +15,7 @@
     text-align: center;
     position: relative;
     padding: 10px 20px;
-    clip-path: polygon(38% 0, 62% 0, 65% 100%, 35% 100%);
+    clip-path: polygon(30% 0, 70% 0, 75% 100%, 25% 100%);
 }
 
 #about .container:nth-child(2) {
@@ -30,7 +30,7 @@
     text-align: center;
     position: relative;
     padding: 10px 20px;
-    clip-path: polygon(28% 0, 72% 0, 75% 100%, 25% 100%);
+    clip-path: polygon(20% 0, 80% 0, 85% 100%, 15% 100%);
 }
 
 #about .container:nth-child(2) p:nth-child(3) {
@@ -88,10 +88,6 @@
         transform: translate(-3px, 1px) rotate(0deg);
     }
 
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-
     80% {
         transform: translate(-1px, -1px) rotate(1deg);
     }
@@ -110,8 +106,7 @@
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
         text-align: left;
         padding: .25em;
-        position: absolute;
-        margin: 0 0 0 0;
+        margin: 0;
     }
 
     #about .container:nth-child(1) h2 {
@@ -121,8 +116,14 @@
     #about .container:nth-child(2) h2 {
         clip-path: polygon(10% 0, 90% 0, 95% 100%, 5% 100%);
     }
+}
 
-    #about .container:nth-child(2) ul {
-        margin-top: 5em;
+@media only screen and (max-width: 600px) {
+    #about .container:nth-child(2) h2 {
+        margin-top: -4.5em;
+    }
+
+    #about .container:nth-child(2) ul li {
+        padding: .25em 1em;
     }
 }
