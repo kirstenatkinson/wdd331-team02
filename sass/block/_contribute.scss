@@ -1,0 +1,121 @@
+#contribute {
+    border: .25em solid $color-purple;
+    border-radius: 1.5em;
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 8em;
+    max-width: 1200px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+
+    section:nth-child(1) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    section:nth-child(2) {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2;
+    }
+
+    h2 {
+        background: $color-purple;
+        margin-top: -3em;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding: 10px 20px;
+        clip-path: polygon(30% 0, 70% 0, 75% 100%, 25% 100%);
+    }
+
+    h3 {
+        position: relative;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #files h3::before,
+    #files h3::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 20px;
+        background-color: $color-yellow;
+    }
+
+    #files h3::before {
+        left: 25px;
+        /* Adjust to position the bar */
+        transform: translateY(-50%);
+    }
+
+    #files h3::after {
+        right: 25px;
+        /* Adjust to position the bar */
+        transform: translateY(-50%);
+    }
+
+    #files .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        a {
+            border: 1px solid $color-purple;
+            display: flex;
+            align-self: center;
+            height: 100%;
+        }
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    #contribute h2 {
+        clip-path: polygon(25% 0, 75% 0, 80% 100%, 20% 100%);
+    }
+
+    #contribute #files h3::before,
+    #contribute #files h3::after {
+        width: 50px;
+    }
+
+    #contribute #files h3::before {
+        left: 0px;
+        /* Adjust to position the bar */
+    }
+
+    #contribute #files h3::after {
+        right: 0px;
+        /* Adjust to position the bar */
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #contribute #files h3::before,
+    #contribute #files h3::after {
+        width: 40px;
+    }
+
+    #contribute #files h3::before {
+        left: 0px;
+        /* Adjust to position the bar */
+    }
+
+    #contribute #files h3::after {
+        right: 0px;
+        /* Adjust to position the bar */
+    }
+
+
+}
