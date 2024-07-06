@@ -515,9 +515,9 @@ nav ul {
   background-color: #FFDE59;
   position: fixed;
   top: 50px;
-  left: 0px;
-  transform: rotate(-5deg);
-  padding: 28px;
+  left: 10px;
+  clip-path: polygon(10% 0, 100% 10%, 90% 100%, 0 90%);
+  padding: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-size: 2em;
 }
