@@ -1,0 +1,51 @@
+.profile .container {
+    position: relative;
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 8em;
+    max-width: 600px;
+}
+
+.profile .container h4 {
+    background: $color-blue-2;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    padding: 5px 30px;
+    transform: rotate(-10deg) translateX(115px);
+    clip-path: polygon(15% 0, 85% 0, 90% 100%, 10% 100%);
+}
+
+.profile-title {
+    background: $color-pink;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    padding: 15px 10px 15px 5px;
+    transform: rotate(15deg) translateY(-60px);
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-title span {
+    font-size: 3em;
+}
+
+.profile-author {
+    background: $color-yellow;
+    color: $color-background;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    padding: 10px 15px;
+    transform: rotate(-15deg) translateY(-200px) translateX(60px);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
