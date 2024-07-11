@@ -981,3 +981,43 @@ nav ul li a:hover {
     clip-path: polygon(25% 0, 75% 0, 80% 100%, 20% 100%);
   }
 }
+.page-footer {
+  padding: 20px;
+  text-align: center;
+  grid-column: 2/4;
+}
+.page-footer .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.page-footer .container p {
+  margin-bottom: 10px;
+}
+.page-footer .container ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.page-footer .container ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.page-footer .container ul li a {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px #FFDE59 solid;
+  border-radius: 10px;
+}
+.page-footer .container ul li a:hover {
+  text-decoration: underline;
+}
+.page-footer .container ul li a svg {
+  fill: white;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.page-footer .container strong {
+  font-weight: bold;
+}
