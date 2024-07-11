@@ -793,6 +793,7 @@ nav ul li a:hover {
 }
 #styles .container {
   position: relative;
+  background-color: #00114B;
   border: 0.25em solid #00cac8;
   border-radius: 1.5em;
   padding: 1em;
@@ -804,9 +805,9 @@ nav ul li a:hover {
 #styles .container::before {
   content: "";
   position: absolute;
-  top: -0.15em;
+  top: 0em;
   left: -0.5em;
-  right: -0.15em;
+  right: 0em;
   bottom: -0.5em;
   border: 0.25em solid #38B6FF;
   border-radius: 1.5em;
@@ -849,4 +850,73 @@ nav ul li a:hover {
   #styles .container h4 {
     clip-path: polygon(25% 0, 75% 0, 80% 100%, 20% 100%);
   }
+}
+.profile .container {
+  position: relative;
+  padding: 1em;
+  margin: 1em;
+  margin-bottom: 8em;
+  max-width: 600px;
+}
+
+h4 {
+  background: #00cac8;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  padding: 10px 30px;
+  clip-path: polygon(15% 0, 85% 0, 90% 100%, 10% 100%);
+  transform: translateX(50px) rotate(-10deg);
+}
+
+.profile-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF22AD;
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
+  transform: translateY(-10px) rotate(15deg);
+}
+
+.profile-title span {
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: translateX(-20px);
+}
+
+.profile-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFDE59;
+  color: #00114B;
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 50%);
+  transform: translateY(-10px) rotate(15deg);
+}
+
+.profile-twitter span {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #6ecff6;
+  padding: 10px;
+  transform: rotate(-5deg);
+  font-size: 14px;
+  transform-origin: left bottom;
+}
+
+.profile-website {
+  list-style: none;
+}
+
+.profile-twitter {
+  display: none;
+}
+
+.profile-website span {
+  display: none;
 }
