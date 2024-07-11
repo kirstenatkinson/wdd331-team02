@@ -812,6 +812,7 @@ nav ul li a:hover {
 }
 #contribute ol {
   display: grid;
+  grid-gap: 30px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -819,8 +820,7 @@ nav ul li a:hover {
   border: 1px solid #FFDE59;
   border-radius: 10px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
+  display: inline;
   width: 100%;
 }
 #contribute #files h3::before,
@@ -849,6 +849,7 @@ nav ul li a:hover {
   justify-content: space-around;
 }
 #contribute #files .container a {
+  margin: 5px;
   border: 1px solid #FFDE59;
   border-radius: 10px;
   padding: 5px 20px 5px 20px;
@@ -888,6 +889,7 @@ nav ul li a:hover {
   #contribute ol {
     display: flex;
     flex-direction: column;
+    padding: 0px;
   }
 
   #contribute #files h3::before,
