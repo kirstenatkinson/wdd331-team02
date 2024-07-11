@@ -952,13 +952,15 @@ h4 {
 .profile .container > a {
   position: relative;
   display: block;
-  padding: 10px 30px;
+  padding: 10px 10px;
   border: 2px solid #FFDE59;
   border-radius: 10px;
   text-decoration: none;
   left: 75%;
   transform: translateY(-500px) rotate(-90deg);
   font-size: 2rem;
+  text-align: center;
+  font-size: 2.25em;
 }
 
 .profile .container > a:hover {
