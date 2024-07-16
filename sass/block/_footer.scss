@@ -1,0 +1,48 @@
+.page-footer {
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 10px;
+
+            li {
+                display: inline-block;
+                margin-right: 10px;
+
+                a {
+                    text-decoration: none;
+                    padding:10px;
+                    border: 1px $color-yellow solid;
+                    border-radius: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    svg {
+                        fill:white;
+                        width: 16px;
+                        height: 16px;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    }
+}
