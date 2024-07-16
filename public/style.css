@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Wire+One&display=swap");
-
 /*
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
@@ -58,7 +57,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
 :root {
   --main-font: "Open Sans", sans-serif;
   --accent-font: "Wire One", sans-serif;
@@ -174,13 +172,11 @@ nav {
     display: inline;
   }
 }
-
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   body {
     display: inline;
   }
 }
-
 header {
   z-index: 0;
   padding: 20px;
@@ -189,13 +185,11 @@ header {
   position: relative;
   height: 600px;
 }
-
 header .container {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
 }
-
 header::before {
   content: "";
   position: absolute;
@@ -210,7 +204,6 @@ header::before {
   z-index: -1;
   animation: spin 4s infinite linear, bounce 2s infinite alternate;
 }
-
 header h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -218,7 +211,6 @@ header h1 {
   color: transparent;
   left: 400px;
 }
-
 header h1::after {
   content: "STYLE";
   color: #FFDE59;
@@ -230,7 +222,6 @@ header h1::after {
   font-size: 6rem;
   animation: neonGlow 1s infinite alternate, slideInStyle 1s ease-in-out forwards;
 }
-
 header h1::before {
   content: "STAGE";
   color: #FF22AD;
@@ -242,7 +233,6 @@ header h1::before {
   font-size: 6rem;
   animation: neonGlowPink 1s infinite alternate, slideInStage 1s ease-in-out forwards;
 }
-
 header h2 {
   position: absolute;
   display: inline-block;
@@ -262,7 +252,6 @@ header h2 {
   animation: swing 3s infinite ease-in-out;
   z-index: -1;
 }
-
 header h2::before {
   content: "";
   position: absolute;
@@ -276,7 +265,6 @@ header h2::before {
   /* Ensure the box is behind the text */
   animation: colorChange 5s infinite alternate;
 }
-
 header p {
   top: 400px;
   left: 500px;
@@ -285,7 +273,6 @@ header p {
   margin-bottom: 20px;
   animation: wobble 2s infinite ease-in-out, colorChange 3s infinite alternate;
 }
-
 header .link-github {
   position: absolute;
   display: inline-block;
@@ -299,191 +286,149 @@ header .link-github {
   left: 850px;
   animation: shake 0.5s infinite alternate, pulse 1.5s infinite ease-in-out;
 }
-
 header .link-github svg {
   fill: #00114B;
 }
-
 @keyframes spin {
   from {
     transform: rotate(-25deg);
   }
-
   to {
     transform: rotate(335deg);
   }
 }
-
 @keyframes moveUpDown {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-20px);
   }
 }
-
 @keyframes bounce {
   0% {
     top: 40px;
   }
-
   50% {
     top: 30px;
   }
-
   100% {
     top: 40px;
   }
 }
-
 @keyframes neonGlow {
   0% {
     text-shadow: 2px 2px 0 #f2c200;
   }
-
   50% {
     text-shadow: 2px 2px 8px white;
   }
-
   100% {
     text-shadow: 2px 2px 0 #f2c200;
   }
 }
-
 @keyframes neonGlowPink {
   0% {
     text-shadow: 2px 2px 0 #bb0076;
   }
-
   50% {
     text-shadow: 2px 2px 8px #ffeef9;
   }
-
   100% {
     text-shadow: 2px 2px 0 #bb0076;
   }
 }
-
 @keyframes slideInStyle {
   0% {
     transform: translateX(-500%);
   }
-
   100% {
     transform: translateX(0%);
     transform: rotate(5deg);
   }
 }
-
 @keyframes slideInStage {
   0% {
     transform: translateX(-200%);
   }
-
   100% {
     transform: translateX(0%);
     transform: rotate(-5deg);
   }
 }
-
 @keyframes swing {
   0% {
     transform: rotate(0deg);
   }
-
   25% {
     transform: rotate(15deg);
   }
-
   50% {
     transform: rotate(-10deg);
   }
-
   75% {
     transform: rotate(5deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
 }
-
 @keyframes colorChange {
   0% {
     background-color: #38B6FF;
   }
-
   50% {
     background-color: #00cac8;
   }
-
   100% {
     background-color: #38B6FF;
   }
 }
-
 @keyframes wobble {
   0% {
     transform: translateX(0%);
   }
-
   25% {
     transform: translateX(-10%);
   }
-
   50% {
     transform: translateX(10%);
   }
-
   75% {
     transform: translateX(-5%);
   }
-
   100% {
     transform: translateX(0%);
   }
 }
-
 @keyframes shake {
   0% {
     transform: rotate(0deg);
   }
-
   25% {
     transform: rotate(-5deg);
   }
-
   50% {
     transform: rotate(5deg);
   }
-
   75% {
     transform: rotate(-5deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
 }
-
 @keyframes pulse {
   0% {
     transform: scale(1);
   }
-
   50% {
     transform: scale(1.1);
   }
-
   100% {
     transform: scale(1);
   }
 }
-
 header .link-github:hover {
   background-color: #ffd426;
 }
@@ -493,115 +438,94 @@ header .link-github:hover {
     top: 40px;
     left: -5px;
   }
-
   header h1 {
     left: -25px;
   }
-
   header h1::after {
     top: 75px;
     left: 75px;
     animation: neonGlow 1s infinite alternate, moveUpDown 5s infinite alternate;
   }
-
   header h1::before {
     top: 175px;
     left: 120px;
     animation: neonGlowPink 1s infinite alternate, moveUpDown 5s infinite alternate;
   }
-
   header h2 {
     top: 400px;
     left: 270px;
   }
-
   header p {
     top: 325px;
     left: 100px;
     transform: rotate(-27deg);
     z-index: -1;
   }
-
   header .link-github {
     top: 460px;
     left: 75px;
   }
 }
-
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   header::before {
     top: 40px;
     left: 95px;
   }
-
   header h1 {
     left: 75px;
   }
-
   header h1::after {
     top: 75px;
     left: 75px;
     animation: neonGlow 1s infinite alternate, moveUpDown 5s infinite alternate;
   }
-
   header h1::before {
     top: 175px;
     left: 120px;
     animation: neonGlowPink 1s infinite alternate, moveUpDown 5s infinite alternate;
   }
-
   header h2 {
     top: 130px;
     left: 500px;
   }
-
   header p {
     top: 425px;
     left: 175px;
   }
-
   header .link-github {
     top: 375px;
     left: 525px;
   }
 }
-
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
   header::before {
     top: 40px;
     left: 95px;
   }
-
   header h1 {
     left: 75px;
   }
-
   header h1::after {
     top: 75px;
     left: 75px;
   }
-
   header h1::before {
     top: 175px;
     left: 120px;
   }
-
   header h2 {
     top: 130px;
     left: 500px;
   }
-
   header p {
     top: 425px;
     left: 175px;
   }
-
   header .link-github {
     top: 375px;
     left: 525px;
   }
 }
-
 nav ul {
   background-color: #FFDE59;
   position: fixed;
@@ -647,13 +571,11 @@ nav ul li a:hover {
     text-align: center;
   }
 }
-
 @media only screen and (max-width: 1300px) {
   nav ul {
     padding: 20px;
   }
 }
-
 #about .container:nth-child(1),
 #about .container:nth-child(2) {
   border: 0.25em solid #FF22AD;
@@ -727,36 +649,28 @@ nav ul li a:hover {
   0% {
     transform: rotate(5deg);
   }
-
   20% {
     transform: rotate(-5deg);
   }
-
   40% {
     transform: rotate(2deg);
   }
-
   50% {
     transform: rotate(-2deg);
   }
-
   60% {
     transform: translate(-3px, 1px) rotate(0deg);
   }
-
   80% {
     transform: translate(-1px, -1px) rotate(1deg);
   }
-
   90% {
     transform: translate(1px, 2px) rotate(0deg);
   }
-
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-
 @media only screen and (max-width: 900px) {
   #about .container:nth-child(2) p:nth-child(3) {
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
@@ -773,7 +687,6 @@ nav ul li a:hover {
     clip-path: polygon(10% 0, 90% 0, 95% 100%, 5% 100%);
   }
 }
-
 @media only screen and (max-width: 600px) {
   #about .container:nth-child(1) h2 {
     font-size: 1em;
@@ -787,7 +700,6 @@ nav ul li a:hover {
     padding: 0.25em 1em;
   }
 }
-
 #guidelines {
   border: 0.25em solid #38B6FF;
   border-radius: 1.5em;
@@ -796,7 +708,6 @@ nav ul li a:hover {
   margin-bottom: 8em;
   max-width: 1200px;
 }
-
 #guidelines h2 {
   background: #38B6FF;
   margin-top: -3em;
@@ -806,7 +717,6 @@ nav ul li a:hover {
   padding: 10px 20px;
   clip-path: polygon(30% 0, 70% 0, 75% 100%, 25% 100%);
 }
-
 #guidelines .link-guidelines {
   display: inline-block;
   padding: 10px 20px;
@@ -820,13 +730,11 @@ nav ul li a:hover {
   transform: translateX(-50%);
   font-size: 1.5rem;
 }
-
 #guidelines h3 {
   position: relative;
   text-align: center;
   font-size: 2rem;
 }
-
 #guidelines h3::before,
 #guidelines h3::after {
   content: "";
@@ -836,13 +744,11 @@ nav ul li a:hover {
   height: 10px;
   background-color: #FF22AD;
 }
-
 #guidelines h3::before {
   left: 100px;
   /* Adjust to position the bar */
   transform: translateY(-50%);
 }
-
 #guidelines h3::after {
   right: 100px;
   /* Adjust to position the bar */
@@ -855,7 +761,7 @@ nav ul li a:hover {
   }
 
   #guidelines h3::before,
-  #guidelines h3::after {
+#guidelines h3::after {
     width: 150px;
   }
 
@@ -869,11 +775,9 @@ nav ul li a:hover {
     /* Adjust to position the bar */
   }
 }
-
 @media only screen and (max-width: 600px) {
-
   #guidelines h3::before,
-  #guidelines h3::after {
+#guidelines h3::after {
     width: 100px;
   }
 
@@ -887,7 +791,6 @@ nav ul li a:hover {
     /* Adjust to position the bar */
   }
 }
-
 #contribute {
   border: 0.25em solid #512B8F;
   border-radius: 1.5em;
@@ -899,17 +802,14 @@ nav ul li a:hover {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr;
 }
-
 #contribute section:nth-child(1) {
   grid-column: 1/span 1;
   grid-row: 1/span 1;
 }
-
 #contribute section:nth-child(2) {
   grid-column: 2/span 1;
   grid-row: 1/span 2;
 }
-
 #contribute h2 {
   background: #512B8F;
   margin-top: -3em;
@@ -920,20 +820,17 @@ nav ul li a:hover {
   clip-path: polygon(30% 0, 70% 0, 75% 100%, 25% 100%);
   width: 200%;
 }
-
 #contribute h3 {
   position: relative;
   text-align: center;
   font-size: 2rem;
 }
-
 #contribute ol {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
 #contribute ol li {
   border: 1px solid #FFDE59;
   border-radius: 10px;
@@ -941,7 +838,6 @@ nav ul li a:hover {
   display: inline;
   width: 100%;
 }
-
 #contribute #files h3::before,
 #contribute #files h3::after {
   content: "";
@@ -951,26 +847,22 @@ nav ul li a:hover {
   height: 20px;
   background-color: #FFDE59;
 }
-
 #contribute #files h3::before {
   left: 25px;
   /* Adjust to position the bar */
   transform: translateY(-50%);
 }
-
 #contribute #files h3::after {
   right: 25px;
   /* Adjust to position the bar */
   transform: translateY(-50%);
 }
-
 #contribute #files .container {
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
 }
-
 #contribute #files .container a {
   margin: 5px;
   border: 1px solid #FFDE59;
@@ -987,7 +879,7 @@ nav ul li a:hover {
   }
 
   #contribute #files h3::before,
-  #contribute #files h3::after {
+#contribute #files h3::after {
     width: 40px;
   }
 
@@ -1001,17 +893,14 @@ nav ul li a:hover {
     /* Adjust to position the bar */
   }
 }
-
 @media only screen and (max-width: 600px) {
   #contribute {
     display: flex;
     flex-direction: column;
   }
-
   #contribute h2 {
     width: 100%;
   }
-
   #contribute ol {
     display: flex;
     flex-direction: column;
@@ -1019,7 +908,7 @@ nav ul li a:hover {
   }
 
   #contribute #files h3::before,
-  #contribute #files h3::after {
+#contribute #files h3::after {
     width: 75px;
   }
 
@@ -1033,7 +922,6 @@ nav ul li a:hover {
     /* Adjust to position the bar */
   }
 }
-
 #styles .container {
   position: relative;
   background-color: #00114B;
@@ -1094,7 +982,6 @@ nav ul li a:hover {
     clip-path: polygon(25% 0, 75% 0, 80% 100%, 20% 100%);
   }
 }
-
 .profile {
   display: flex;
   justify-content: center;
@@ -1193,7 +1080,7 @@ h4 {
   display: none;
 }
 
-.profile .container>a {
+.profile .container > a {
   position: relative;
   display: block;
   padding: 10px 10px;
@@ -1207,8 +1094,49 @@ h4 {
   font-size: 2.25em;
 }
 
-.profile .container>a:hover {
+.profile .container > a:hover {
   background-color: #ffd426;
   color: #00114B;
   font-weight: bolder;
+}
+
+.page-footer {
+  padding: 20px;
+  text-align: center;
+  grid-column: 2/4;
+}
+.page-footer .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.page-footer .container p {
+  margin-bottom: 10px;
+}
+.page-footer .container ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.page-footer .container ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.page-footer .container ul li a {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px #FFDE59 solid;
+  border-radius: 10px;
+}
+.page-footer .container ul li a:hover {
+  text-decoration: underline;
+}
+.page-footer .container ul li a svg {
+  fill: white;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.page-footer .container strong {
+  font-weight: bold;
 }
