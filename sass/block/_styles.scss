@@ -1,5 +1,6 @@
 #styles .container {
     position: relative;
+    background-color: $color-background;
     border: .25em solid $color-blue-2;
     border-radius: 1.5em;
     padding: 1em;
@@ -11,9 +12,9 @@
 #styles .container::before {
     content: '';
     position: absolute;
-    top: -0.15em;
+    top: 0em;
     left: -0.5em;
-    right: -0.15em;
+    right: 0em;
     bottom: -0.5em;
     border: .25em solid $color-blue-1;
     border-radius: 1.5em;
